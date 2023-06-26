@@ -2,10 +2,10 @@ import { useState } from "react";
 import numContext from "./numContext";
 
 const NumState = (props) => {
-  const [state, setState] = useState("Your text will show here:");
+  const [result, setResult] = useState("");
 
   return (
-    <numContext.Provider value={{state, setState}}>
+    <numContext.Provider value={{result, setResult}}>
         {props.children}
     </numContext.Provider>
   )

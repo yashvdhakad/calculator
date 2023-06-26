@@ -2,10 +2,10 @@ import { useContext } from "react"
 import numContext from "../context/numContext"
 
 const CDisplay = () => {
-    const text = useContext(numContext)
+    const ctxt = useContext(numContext)
 
     return (
-        <div className="w-full h-1/6 rounded shadow shadow-black/20 text-2xl text-zinc-600 flex justify-center items-center">{text.state}</div>
+        <div className="h-20 px-4 rounded shadow shadow-black/20 text-4xl font-bold text-zinc-600 flex justify-end items-center">{ctxt.result}</div>
     )
 }
 
