@@ -25,7 +25,7 @@ const CNum = (props) => {
       props.num === "Clear" ? clearHandler : clickHandler &&
         props.num === "C" ? backspaceHandler : clickHandler &&
           props.num === "=" ? calcHandler : clickHandler
-    } className={`p-4 rounded shadow-sm shadow-black/20 cursor-pointer text-center select-none ${props.num === "Clear" || props.num === "C" ? "col-span-2" : ""}`}>{props.num}</div>
+    } className={`p-4 bg-slate-400 rounded shadow-sm shadow-black/20 cursor-pointer text-center select-none ${props.num === "Clear" || props.num === "C" ? "col-span-2" : ""}`}>{props.num}</div>
   )
 }
 

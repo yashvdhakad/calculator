@@ -2,7 +2,7 @@ import CNum from "./CNum"
 
 const CNums = () => {
     return (
-        <div className="p-2 rounded shadow shadow-black/20 grid grid-cols-4 gap-2">
+        <div className="p-2 bg-slate-600 rounded shadow shadow-black/20 grid grid-cols-4 gap-2">
                 <CNum num="Clear" />
                 <CNum num="C" />
                 <CNum num={9} />
